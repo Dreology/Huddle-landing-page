@@ -1,5 +1,37 @@
+/* 
+1. Variables
+2. General
+3.Nav
+4.buttons
+
+*/
+
+
+
+/* || CSS Variables */
+:root {
+    /* primary */
+    --clr-pink : hsl(193, 100%, 66%);
+    /* neutral color */
+    --clr-paleCyan: hsl(192, 100%, 9%);
+    --clr-darkCyan: hsl(192, 100%, 9%);
+    --clr-grayishBlue: hsl(208, 11%, 55%);
+    /* font
+    fs- font size
+    fw- font weight
+    */
+
+    --fs-px: 18px;
+    --fw-600: 600;
+    --fw-400: 400;
+    --fw-700: 700; 
+}
+
+/* || General */
 body {
     font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-px);
+    font-weight: var(--fw-400);
 }
 
 
@@ -9,20 +41,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/* || Navbar */
+header{
 
-.top-bar {
-    display: flex;
-    justify-content: center;
-    gap: 80%;
-    height: 2.5rem;
-    margin: 1.25rem 6.25rem;
+    margin-block: 1em 3em;
 }
 
+.huddle-logo{
+display: flex;
+justify-content: space-between;
+}
 .huddle-logo img {
     height: 1.25rem;
     margin-top: 0.5rem;
 }
-
+/* buttons */
 .try-it {
     border-radius: 40px;
     height: 35px;
@@ -31,33 +64,30 @@ body {
     background-color: white;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.13);
 }
-
+/*  */
 .container-top {
-    border: 1px solid red;
-    display: flex;
-    margin: 1.25rem 6.25rem;
-    height: 38rem;
-    max-width: 50%;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 1.5rem;
-    justify-content: space-between;  
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ 
+  
+   
+ 
 }
 
 .image1 {
     max-width: 60%;
-    border: 1px solid red;
+   
 }
 
-.build-community {
-    border: 1px solid red;
-    width: 200px;
-}
+
 
 .build-community h1 {
-    font-size: 2em;
-    font-weight: 600;
+    font-size: var(--fs-px);
+    font-weight: var(--fw-600);
 }
 
 .wrap {
