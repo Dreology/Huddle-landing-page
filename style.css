@@ -140,7 +140,7 @@ body {
 
     .build-community p {
         text-align: center;
-        width: 100%;
+        min-width: 100%;
     }
 
     .get-started {
