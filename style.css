@@ -2,6 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: var(--fs-px);
     font-weight: var(--fw-400);
+    overflow-x: hidden;
 }
 
 .top-con {
@@ -47,7 +48,9 @@ body {
    justify-items: center;
    align-items: center;
    max-width: 100%;
-   margin: 3.6rem 3.6rem 0px 3.6rem;
+   margin: 0px 3.6rem 0px 3.6rem;
+   height: 640px;
+
 }
 
 
@@ -172,6 +175,7 @@ body {
     height: 400px;
     position: absolute;
     min-width: 100%;
+    overflow: hidden;
 }
 
 .container-bottom {
@@ -222,7 +226,8 @@ a {
 .copyright p {
     font-size: 0.7rem;
     text-align: right;
-    margin: 100px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 @media all and (max-width: 426px) {
